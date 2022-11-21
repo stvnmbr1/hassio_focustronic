@@ -7,7 +7,7 @@ Focustronic integration for homeassistant
 
 configuration.yml
 
-focustronic
+focustronic:
  - access_token="TOKEN"
 
 sensor:
