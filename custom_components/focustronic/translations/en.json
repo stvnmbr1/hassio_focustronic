@@ -1,4 +1,5 @@
-  "config": {
+{
+"config": {
     "error": {
       "auth": "The auth token provided is not valid."
     },
