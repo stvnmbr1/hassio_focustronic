@@ -2,6 +2,8 @@ Focustronic integration for homeassistant
 
 *WORK IN PROGRESS*
 
+GUI integration in the works
+
 
 
 
