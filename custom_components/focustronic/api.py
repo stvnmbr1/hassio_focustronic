@@ -29,6 +29,7 @@ class FocustronicAPI:
         self.update_timeout = update_timeout
         self._session = requests.Session()
         self.dosetroncics = []
+        self.dosetroncic_pumps = []
         self.devices = []
 #        self.mastertronics = []
         self._get_devices()
@@ -119,6 +120,48 @@ class FocustronicAPI:
                                 "is_active": e["is_active"],
                                 "last_online": e["last_online"],
                                 "is_adv_active": e["is_adv_active"],
+                                "pumps":[
+                                    {
+                                    "name": e["settings"]["pumps"][0]["name"],
+                                    "id": e["settings"]["pumps"][0]["id"],
+                                    "remaining_volume": e["settings"]["pumps"][0]["remaining_volume"],
+                                    "max_volume": e["settings"]["pumps"][0]["max_volume"],
+                                    "daily_volume": e["settings"]["pumps"][0]["daily_volume"],
+                                    "last_24_hour_total_dose_volume": e["settings"]["pumps"][0]["last_24_hour_total_dose_volume"],
+                                    },
+                                    {
+                                    "name": e["settings"]["pumps"][1]["name"],
+                                    "id": e["settings"]["pumps"][1]["id"],
+                                    "remaining_volume": e["settings"]["pumps"][1]["remaining_volume"],
+                                    "max_volume": e["settings"]["pumps"][1]["max_volume"],
+                                    "daily_volume": e["settings"]["pumps"][1]["daily_volume"],
+                                    "last_24_hour_total_dose_volume": e["settings"]["pumps"][1]["last_24_hour_total_dose_volume"],
+                                    },
+                                    {
+                                    "name": e["settings"]["pumps"][2]["name"],
+                                    "id": e["settings"]["pumps"][2]["id"],
+                                    "remaining_volume": e["settings"]["pumps"][2]["remaining_volume"],
+                                    "max_volume": e["settings"]["pumps"][2]["max_volume"],
+                                    "daily_volume": e["settings"]["pumps"][2]["daily_volume"],
+                                    "last_24_hour_total_dose_volume": e["settings"]["pumps"][2]["last_24_hour_total_dose_volume"],
+                                    },
+                                    {
+                                    "name": e["settings"]["pumps"][3]["name"],
+                                    "id": e["settings"]["pumps"][3]["id"],
+                                    "remaining_volume": e["settings"]["pumps"][3]["remaining_volume"],
+                                    "max_volume": e["settings"]["pumps"][3]["max_volume"],
+                                    "daily_volume": e["settings"]["pumps"][3]["daily_volume"],
+                                    "last_24_hour_total_dose_volume": e["settings"]["pumps"][3]["last_24_hour_total_dose_volume"],
+                                    },
+                                    {
+                                    "name": e["settings"]["pumps"][4]["name"],
+                                    "id": e["settings"]["pumps"][4]["id"],
+                                    "remaining_volume": e["settings"]["pumps"][4]["remaining_volume"],
+                                    "max_volume": e["settings"]["pumps"][4]["max_volume"],
+                                    "daily_volume": e["settings"]["pumps"][4]["daily_volume"],
+                                    "last_24_hour_total_dose_volume": e["settings"]["pumps"][4]["last_24_hour_total_dose_volume"],
+                                    }
+                                ],
                                 "pump1": e["settings"]["pumps"][0]["name"],
                                 "pump1_remaining_volume": e["settings"]["pumps"][0]["remaining_volume"],
                                 "pump1_max_volume": e["settings"]["pumps"][0]["max_volume"],
