@@ -189,7 +189,7 @@ class FocustronicAPI:
                                 "pump5_remaining_volume": e["settings"]["pumps"][4]["remaining_volume"],
                             }
                         )
-                    _LOGGER.debug(f"Was able to get {len(data)} data")
+                    _LOGGER.debug(f"Was able to get dosetronic data")
                     _LOGGER.debug(data)
                     self.device_data[dosetronic]["data"] = data
                 else:
