@@ -8,8 +8,11 @@ HACS installation available with GUI config
 token still needed in configuration.yaml for now
 please enter correct token in gui for future reference
 
-only dosetronic available for now since i lack the hardware; for now 
+only dosetronic available for now since i lack the hardware; for now
+
 feel free to send me some jsons for other devices (without sensitive data eg. serialnumber)
+PM me of you want to contribute
+
 
 configuration.yml
 
